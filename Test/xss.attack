@@ -9,6 +9,7 @@ Background:
 Scenarios: Do a full xss
     When I launch an "arachni" attack with:
     """
-    arachni --checks=xss* --output-verbose --scope-page-limit=1 http://172.12.0.2:8008/login
+    arachni --checks=xss* --output-verbose --scope-page-limit=1 http://<hostname>:8008/login
+
     """
     Then the output should contain "0 issues were detected"
