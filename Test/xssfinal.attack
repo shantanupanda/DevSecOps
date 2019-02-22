@@ -4,7 +4,7 @@ Background:
     Given "arachni" is installed
     And following profile:
     | name       | environment_variable_name    |
-    | url        | TARGET_HOSTNAME |
+    | hostname        | TARGET_HOSTNAME |
 
 Scenarios: Do a xss check on the path
     When I launch an "arachni" attack with:
